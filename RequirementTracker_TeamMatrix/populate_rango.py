@@ -12,7 +12,7 @@ def populate():
 
             
 def add_user(username, email, first_name, last_name, password):
-    p = User.objects.get_or_create(username=username,email=email, first_name=first_name, last_name=last_name, url=url, password=password)[0]
+    p = User.objects.get_or_create(username=username,email=email, first_name=first_name, last_name=last_name, password=password)[0]
     return p
 
 # Start execution here!
